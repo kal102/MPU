@@ -1,0 +1,752 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'rgmii_125_tx_clk'
+Slack : -0.141
+TNS   : -0.482
+
+Type  : Slow 1200mV 100C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.039
+TNS   : -0.039
+
+Type  : Slow 1200mV 100C Model Setup 'rgmii_25_tx_clk'
+Slack : 0.768
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'rgmii_2_5_tx_clk'
+Slack : 0.768
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'rgmii_rx_clk_125'
+Slack : 1.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'rgmii_rx_clk_25'
+Slack : 1.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'rgmii_rx_clk_2p5'
+Slack : 1.109
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Setup 'altera_reserved_tck'
+Slack : 44.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'rgmii_rx_clk_125'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'rgmii_rx_clk_25'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'rgmii_rx_clk_2p5'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'altera_reserved_tck'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'rgmii_125_tx_clk'
+Slack : 0.565
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'rgmii_25_tx_clk'
+Slack : 16.490
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'rgmii_2_5_tx_clk'
+Slack : 196.505
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.070
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'rgmii_rx_clk_125'
+Slack : 3.857
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 35.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'rgmii_rx_clk_25'
+Slack : 35.857
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 95.590
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'rgmii_rx_clk_2p5'
+Slack : 95.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'altera_reserved_tck'
+Slack : 97.033
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'altera_reserved_tck'
+Slack : 1.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.040
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'rgmii_rx_clk_125'
+Slack : 2.644
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'rgmii_rx_clk_25'
+Slack : 2.644
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'rgmii_rx_clk_2p5'
+Slack : 2.644
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.787
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.787
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'rgmii_rx_clk_125'
+Slack : 3.509
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.540
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'rgmii_125_tx_clk'
+Slack : 3.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'CLKIN_50'
+Slack : 9.785
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'rgmii_rx_clk_25'
+Slack : 19.509
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.625
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'rgmii_25_tx_clk'
+Slack : 19.870
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.521
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'rgmii_rx_clk_2p5'
+Slack : 199.509
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 199.639
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'rgmii_2_5_tx_clk'
+Slack : 199.886
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 4.865
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.634
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.696
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.698
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.733
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.880
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.900
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.901
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 5.986
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.246
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.260
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.307
+
+Type  : Slow 1200mV 100C Model Max Skew 'set_max_skew'
+Slack : 6.460
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.282
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 2.960
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.051
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.186
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.252
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.375
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.678
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.749
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.786
+
+Type  : Slow 1200mV 100C Model Net Delay 'set_net_delay'
+Slack : 4.948
+
+Type  : Slow 1200mV -40C Model Setup 'rgmii_125_tx_clk'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'rgmii_25_tx_clk'
+Slack : 0.790
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'rgmii_2_5_tx_clk'
+Slack : 0.790
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.828
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'rgmii_rx_clk_125'
+Slack : 1.190
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'rgmii_rx_clk_25'
+Slack : 1.190
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'rgmii_rx_clk_2p5'
+Slack : 1.190
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 3.646
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 3.646
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'altera_reserved_tck'
+Slack : 45.115
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'rgmii_rx_clk_125'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'rgmii_rx_clk_25'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'rgmii_rx_clk_2p5'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'altera_reserved_tck'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'rgmii_125_tx_clk'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'rgmii_25_tx_clk'
+Slack : 16.384
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'rgmii_2_5_tx_clk'
+Slack : 196.399
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.654
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'rgmii_rx_clk_125'
+Slack : 4.399
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 35.974
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'rgmii_rx_clk_25'
+Slack : 36.399
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 96.167
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'rgmii_rx_clk_2p5'
+Slack : 96.469
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 97.359
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.911
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.923
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'rgmii_rx_clk_125'
+Slack : 2.237
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'rgmii_rx_clk_25'
+Slack : 2.237
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'rgmii_rx_clk_2p5'
+Slack : 2.237
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.379
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.379
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rgmii_rx_clk_125'
+Slack : 3.501
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.539
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rgmii_125_tx_clk'
+Slack : 3.789
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'CLKIN_50'
+Slack : 9.785
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.478
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rgmii_rx_clk_25'
+Slack : 19.501
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rgmii_25_tx_clk'
+Slack : 19.728
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.426
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 199.488
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rgmii_rx_clk_2p5'
+Slack : 199.501
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rgmii_2_5_tx_clk'
+Slack : 199.739
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.122
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.807
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.884
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.924
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 5.943
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.029
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.038
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.103
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.147
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.322
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.390
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.425
+
+Type  : Slow 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.566
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 2.438
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.215
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.220
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.335
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.395
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.530
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.817
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.912
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.951
+
+Type  : Slow 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.075
+
+Type  : Fast 1200mV -40C Model Setup 'rgmii_125_tx_clk'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'rgmii_rx_clk_125'
+Slack : 0.838
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'rgmii_rx_clk_25'
+Slack : 0.838
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'rgmii_rx_clk_2p5'
+Slack : 0.838
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'rgmii_25_tx_clk'
+Slack : 0.883
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'rgmii_2_5_tx_clk'
+Slack : 0.883
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.258
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.258
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 5.258
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'altera_reserved_tck'
+Slack : 47.736
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'rgmii_rx_clk_125'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'rgmii_rx_clk_25'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'rgmii_rx_clk_2p5'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'altera_reserved_tck'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'rgmii_125_tx_clk'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'rgmii_25_tx_clk'
+Slack : 16.681
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'rgmii_2_5_tx_clk'
+Slack : 196.678
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 5.527
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'rgmii_rx_clk_125'
+Slack : 5.940
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 37.750
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'rgmii_rx_clk_25'
+Slack : 37.940
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 97.811
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'rgmii_rx_clk_2p5'
+Slack : 97.980
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'altera_reserved_tck'
+Slack : 98.561
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'altera_reserved_tck'
+Slack : 0.473
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'rgmii_rx_clk_125'
+Slack : 1.272
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'rgmii_rx_clk_25'
+Slack : 1.272
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'rgmii_rx_clk_2p5'
+Slack : 1.272
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.348
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.348
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rgmii_rx_clk_125'
+Slack : 3.168
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3.589
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rgmii_125_tx_clk'
+Slack : 3.855
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'CLKIN_50'
+Slack : 9.424
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rgmii_rx_clk_25'
+Slack : 19.168
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 19.624
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rgmii_25_tx_clk'
+Slack : 19.890
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.282
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rgmii_rx_clk_2p5'
+Slack : 199.168
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'pll_0|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 199.623
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rgmii_2_5_tx_clk'
+Slack : 199.889
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.164
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.559
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.607
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.631
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.632
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.639
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.696
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.699
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.716
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.850
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.856
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.879
+
+Type  : Fast 1200mV -40C Model Max Skew 'set_max_skew'
+Slack : 6.932
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 3.157
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.398
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 4.996
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.072
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.129
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.208
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.340
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.394
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.417
+
+Type  : Fast 1200mV -40C Model Net Delay 'set_net_delay'
+Slack : 5.484
+
+------------------------------------------------------------

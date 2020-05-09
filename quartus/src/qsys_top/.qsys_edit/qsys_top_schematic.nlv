@@ -1,0 +1,39 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst qsys_top.master_0.timing_adt -pg 1
+preplace inst qsys_top.master_0.p2b_adapter -pg 1
+preplace inst qsys_top.master_0.b2p_adapter -pg 1
+preplace inst qsys_top.master_0.clk_src -pg 1
+preplace inst qsys_top.mpu_ss_0.eth_tx_0 -pg 1
+preplace inst qsys_top.master_0.clk_rst -pg 1
+preplace inst qsys_top.mpu_ss_0.eth_rx_0 -pg 1
+preplace inst qsys_top.master_0 -pg 1 -lvl 2 -y 100
+preplace inst qsys_top.master_0.transacto -pg 1
+preplace inst qsys_top.master_0.b2p -pg 1
+preplace inst qsys_top.eth_tse_0 -pg 1 -lvl 5 -y 340
+preplace inst qsys_top.clk_0 -pg 1 -lvl 1 -y 270
+preplace inst qsys_top.master_0.p2b -pg 1
+preplace inst qsys_top.mpu_ss_0.mpu_0 -pg 1
+preplace inst qsys_top.mpu_ss_0.clk_0 -pg 1
+preplace inst qsys_top.mpu_ss_0 -pg 1 -lvl 7 -y 350
+preplace inst qsys_top -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst qsys_top.master_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst qsys_top.eth_tse_0.i_tse_mac -pg 1
+preplace inst qsys_top.master_0.fifo -pg 1
+preplace netloc FAN_OUT<net_container>qsys_top</net_container>(SLAVE)eth_tse_0.receive_clock_connection,(MASTER)clk_0.clk,(SLAVE)eth_tse_0.control_port_clock_connection,(SLAVE)eth_tse_0.transmit_clock_connection,(SLAVE)master_0.clk,(SLAVE)mpu_ss_0.clk) 1 1 6 430 340 NJ 340 NJ 340 1160 300 NJ 300 1750
+preplace netloc FAN_OUT<net_container>qsys_top</net_container>(MASTER)clk_0.clk_reset,(SLAVE)master_0.clk_reset,(SLAVE)eth_tse_0.reset_connection,(SLAVE)mpu_ss_0.reset) 1 1 6 450 360 NJ 360 NJ 360 1120 620 NJ 620 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)eth_tse_0.pcs_mac_rx_clock_connection,(SLAVE)qsys_top.eth_tse_0_pcs_mac_rx_clock_connection) 1 0 5 NJ 40 NJ 40 NJ 280 NJ 280 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.eth_tse_0_mac_mdio_connection,(SLAVE)eth_tse_0.mac_mdio_connection) 1 0 5 NJ 260 NJ 60 NJ 300 NJ 300 NJ
+preplace netloc POINT_TO_POINT<net_container>qsys_top</net_container>(MASTER)master_0.master,(SLAVE)eth_tse_0.control_port) 1 2 3 NJ 320 NJ 320 1180
+preplace netloc POINT_TO_POINT<net_container>qsys_top</net_container>(SLAVE)eth_tse_0.transmit,(MASTER)mpu_ss_0.transmit) 1 4 4 1200 680 NJ 680 NJ 680 2080
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.eth_tse_0_mac_status_connection,(SLAVE)eth_tse_0.mac_status_connection) 1 0 5 NJ 450 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.mpu_ss_0_tx_mac_misc_connection,(SLAVE)mpu_ss_0.tx_mac_misc_connection) 1 0 7 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.mpu_ss_0_rx_mac_misc_connection,(SLAVE)mpu_ss_0.rx_mac_misc_connection) 1 0 7 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ 640 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.eth_tse_0_mac_rgmii_connection,(SLAVE)eth_tse_0.mac_rgmii_connection) 1 0 5 NJ 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)eth_tse_0.pcs_mac_tx_clock_connection,(SLAVE)qsys_top.eth_tse_0_pcs_mac_tx_clock_connection) 1 0 5 NJ 490 NJ 490 NJ 490 NJ 490 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.eth_tse_0_mac_misc_connection,(SLAVE)eth_tse_0.mac_misc_connection) 1 0 5 NJ 410 NJ 410 NJ 410 NJ 410 NJ
+preplace netloc POINT_TO_POINT<net_container>qsys_top</net_container>(SLAVE)mpu_ss_0.receive,(MASTER)eth_tse_0.receive) 1 5 2 1640 380 NJ
+preplace netloc EXPORT<net_container>qsys_top</net_container>(SLAVE)qsys_top.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+levelinfo -pg 1 0 200 2120
+levelinfo -hier qsys_top 210 240 570 830 1100 1510 1730 1950 2100

@@ -1,0 +1,130 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 19:29:18  September 29, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		mpu_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone 10 LP"
+set_global_assignment -name DEVICE 10CL025YU256I7G
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:50:07  AUGUST 28, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to RX_CLK
+set_location_assignment PIN_E15 -to RESET_N
+set_location_assignment PIN_B4 -to MDC
+set_location_assignment PIN_A4 -to MDIO
+set_location_assignment PIN_C6 -to PHY_RESET_N
+set_location_assignment PIN_B8 -to RX_CLK
+set_location_assignment PIN_A5 -to RX_CONTROL
+set_location_assignment PIN_D6 -to TX_CONTROL
+set_location_assignment PIN_M16 -to SET_1000
+set_location_assignment PIN_A8 -to SET_10
+set_location_assignment PIN_J14 -to ENA_10_N
+set_location_assignment PIN_J13 -to ETH_MODE_N
+set_location_assignment PIN_L14 -to LED_RESET_N
+set_location_assignment PIN_K15 -to LED_CORE_RESET_N
+set_location_assignment PIN_A7 -to RGMII_IN[0]
+set_location_assignment PIN_B7 -to RGMII_IN[1]
+set_location_assignment PIN_A6 -to RGMII_IN[2]
+set_location_assignment PIN_B6 -to RGMII_IN[3]
+set_location_assignment PIN_E6 -to RGMII_OUT[0]
+set_location_assignment PIN_A3 -to RGMII_OUT[1]
+set_location_assignment PIN_B3 -to RGMII_OUT[2]
+set_location_assignment PIN_A2 -to RGMII_OUT[3]
+set_location_assignment PIN_D3 -to GTX_CLK
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ON
+set_global_assignment -name ROUTER_TIMING_OPTIMIZATION_LEVEL MAXIMUM
+set_global_assignment -name QII_AUTO_PACKED_REGISTERS NORMAL
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_location_assignment PIN_E1 -to c10_clk50m
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to c10_clk50m
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ENA_10_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ETH_MODE_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_CORE_RESET_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED_RESET_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SET_1000
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SET_10
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESET_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GTX_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MDC
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MDIO
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PHY_RESET_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_IN[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_IN[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_IN[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_IN[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_OUT[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_OUT[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_OUT[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RGMII_OUT[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_CONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to TX_CONTROL
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_instance_assignment -name GLOBAL_SIGNAL OFF -to tx_clk
+set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 4.0
+set_global_assignment -name FITTER_AGGRESSIVE_ROUTABILITY_OPTIMIZATION ALWAYS
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT NORMAL
+set_global_assignment -name PERIPHERY_TO_CORE_PLACEMENT_AND_ROUTING_OPTIMIZATION AUTO
+set_instance_assignment -name PERIPHERY_TO_CORE_PLACEMENT_AND_ROUTING_OPTIMIZATION ON -to tx_clk
+set_global_assignment -name SEED 6
+set_global_assignment -name SDC_FILE top.sdc
+set_global_assignment -name QIP_FILE src/qsys_top/qsys_top/synthesis/qsys_top.qip
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name QIP_FILE ddio_out.qip
+set_global_assignment -name VERILOG_FILE src/host_interface.v
+set_global_assignment -name VERILOG_FILE src/eth_axis_rx.v
+set_global_assignment -name VERILOG_FILE src/eth_axis_tx.v
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP ON
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

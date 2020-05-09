@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element clk_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element eth_rx_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element eth_tx_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element mpu_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+   element qsys_top
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone 10 LP";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="AUTO" />
+ <parameter name="device" value="10CL025YU256I7G" />
+ <parameter name="deviceFamily" value="Cyclone 10 LP" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface
+   name="receive"
+   internal="eth_rx_0.receive"
+   type="avalon_streaming"
+   dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="rx_mac_misc_connection"
+   internal="eth_rx_0.rx_mac_misc_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="transmit"
+   internal="eth_tx_0.transmit"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="tx_mac_misc_connection"
+   internal="eth_tx_0.tx_mac_misc_connection"
+   type="conduit"
+   dir="end" />
+ <module name="clk_0" kind="clock_source" version="18.1" enabled="1">
+  <parameter name="clockFrequency" value="12500000" />
+  <parameter name="clockFrequencyKnown" value="false" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module name="eth_rx_0" kind="eth_rx" version="1.0" enabled="1">
+  <parameter name="MMU_SIZE" value="10" />
+ </module>
+ <module name="eth_tx_0" kind="eth_tx" version="1.0" enabled="1" />
+ <module name="mpu_0" kind="mpu" version="1.0" enabled="1">
+  <parameter name="ACC_SIZE" value="24" />
+  <parameter name="FIFO_SIZE" value="4" />
+  <parameter name="MMU_SIZE" value="10" />
+  <parameter name="VAR_SIZE" value="8" />
+ </module>
+ <connection kind="clock" version="18.1" start="clk_0.clk" end="eth_rx_0.clock" />
+ <connection kind="clock" version="18.1" start="clk_0.clk" end="eth_tx_0.clock" />
+ <connection kind="clock" version="18.1" start="clk_0.clk" end="mpu_0.clock" />
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="eth_rx_0.mpu_rx"
+   end="mpu_0.mpu_rx">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="eth_tx_0.mpu_tx"
+   end="mpu_0.mpu_tx">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="eth_rx_0.rx_tx"
+   end="eth_tx_0.rx_tx">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="mpu_0.reset_sink" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="eth_tx_0.reset_sink" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clk_0.clk_reset"
+   end="eth_rx_0.reset_sink" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="AUTO" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

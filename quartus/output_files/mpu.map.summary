@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat May 09 16:33:20 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : mpu
+Top-level Entity Name : top
+Family : Cyclone 10 LP
+Total logic elements : 24,072
+    Total combinational functions : 18,541
+    Dedicated logic registers : 16,995
+Total registers : 17007
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 41,856
+Embedded Multiplier 9-bit elements : 102
+Total PLLs : 1

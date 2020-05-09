@@ -1,0 +1,59 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Lukasz\workspace\mpu-fork\quartus\src\qsys_top\qsys_top.qsys --block-symbol-file --output-directory=C:\Users\Lukasz\workspace\mpu-fork\quartus\src\qsys_top\mpu_ss --family="Cyclone 10 LP" --part=10CL025YU256I7G
+Progress: Loading qsys_top/qsys_top.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding eth_tse_0 [altera_eth_tse 18.1]
+Progress: Parameterizing module eth_tse_0
+Progress: Adding master_0 [altera_jtag_avalon_master 18.1]
+Progress: Parameterizing module master_0
+Progress: Adding mpu_ss_0 [mpu_ss 1.0]
+Progress: Parameterizing module mpu_ss_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: qsys_top.mpu_ss_0.eth_rx_0: Port mod conflicts with a VHDL, verilog or system verilog reserved word
+Warning: qsys_top.mpu_ss_0.eth_rx_0.receive: The empty signal width should be 1 bits.  
+Warning: qsys_top.mpu_ss_0.eth_tx_0: Port mod conflicts with a VHDL, verilog or system verilog reserved word
+Warning: qsys_top.mpu_ss_0.receive: The empty signal width should be 1 bits.  
+Info: qsys_top.eth_tse_0.receive/mpu_ss_0.receive: Ready latency is 2 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: qsys_top.eth_tse_0.receive/mpu_ss_0.receive: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Lukasz\workspace\mpu-fork\quartus\src\qsys_top\qsys_top.qsys --synthesis=VERILOG --output-directory=C:\Users\Lukasz\workspace\mpu-fork\quartus\src\qsys_top\mpu_ss\synthesis --family="Cyclone 10 LP" --part=10CL025YU256I7G
+Progress: Loading qsys_top/qsys_top.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding eth_tse_0 [altera_eth_tse 18.1]
+Progress: Parameterizing module eth_tse_0
+Progress: Adding master_0 [altera_jtag_avalon_master 18.1]
+Progress: Parameterizing module master_0
+Progress: Adding mpu_ss_0 [mpu_ss 1.0]
+Progress: Parameterizing module mpu_ss_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: qsys_top.mpu_ss_0.eth_rx_0: Port mod conflicts with a VHDL, verilog or system verilog reserved word
+Warning: qsys_top.mpu_ss_0.eth_rx_0.receive: The empty signal width should be 1 bits.  
+Warning: qsys_top.mpu_ss_0.eth_tx_0: Port mod conflicts with a VHDL, verilog or system verilog reserved word
+Warning: qsys_top.mpu_ss_0.receive: The empty signal width should be 1 bits.  
+Info: qsys_top.eth_tse_0.receive/mpu_ss_0.receive: Ready latency is 2 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: qsys_top.eth_tse_0.receive/mpu_ss_0.receive: The source data signal is 32 bits, but the sink is 8 bits. Avalon-ST Adapter will be inserted.
+Info: qsys_top: Generating qsys_top "qsys_top" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master master_0.master and slave eth_tse_0.control_port because the master has address signal 32 bit wide, but the slave is 8 bit wide.
+Info: Interconnect is inserted between master master_0.master and slave eth_tse_0.control_port because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master master_0.master and slave eth_tse_0.control_port because the master has byteenable signal 4 bit wide, but the slave is 0 bit wide.
+Info: avalon_st_adapter: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: eth_tse_0: "qsys_top" instantiated altera_eth_tse "eth_tse_0"
+Info: master_0: "qsys_top" instantiated altera_jtag_avalon_master "master_0"
+Error: Generation stopped, 14 or more modules remaining
+Info: qsys_top: Done "qsys_top" with 16 modules, 3 files
+Error: qsys-generate failed with exit code 1: 1 Error, 4 Warnings
+Info: Stopping: Create HDL design files for synthesis
