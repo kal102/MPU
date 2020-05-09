@@ -1,0 +1,14 @@
+/.dvt/
+/doc/
+/work/
+/quartus/db/
+/quartus/incremental_db/
+/quartus/timing/
+/quartus_debug/db/
+/quartus_debug/incremental_db/
+/quartus_debug/timing/
+/scripts/__pycache__/
+/.project
+/dvt_build.log
+/vsim.dbg
+/vsim.wlf
