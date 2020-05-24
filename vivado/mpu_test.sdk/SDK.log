@@ -1,0 +1,22 @@
+18:20:10 INFO  : Registering command handlers for SDK TCF services
+18:20:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Lukasz\workspace\mpu\vivado\mpu_test.sdk\temp_xsdb_launch_script.tcl
+18:20:14 INFO  : XSCT server has started successfully.
+18:20:15 INFO  : Successfully done setting XSCT server connection channel  
+18:20:15 INFO  : Processing command line option -hwspec C:/Users/Lukasz/workspace/mpu/vivado/mpu_test.sdk/mb_design_wrapper.hdf.
+18:20:15 INFO  : Successfully done setting SDK workspace  
+17:37:59 INFO  : Registering command handlers for SDK TCF services
+17:38:00 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Lukasz\workspace\mpu\vivado\mpu_test.sdk\temp_xsdb_launch_script.tcl
+17:38:03 INFO  : XSCT server has started successfully.
+17:38:03 INFO  : Successfully done setting XSCT server connection channel  
+17:38:04 INFO  : Processing command line option -hwspec C:/Users/Lukasz/workspace/mpu/vivado/mpu_test.sdk/mb_design_wrapper.hdf.
+17:38:04 INFO  : Successfully done setting SDK workspace  
+17:38:04 INFO  : Checking for hwspec changes in the project mb_design_wrapper_hw_platform_0.
+17:38:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1590334629612,  Project:1589300368170
+17:38:07 INFO  : The hardware specification for project 'mb_design_wrapper_hw_platform_0' is different from C:/Users/Lukasz/workspace/mpu/vivado/mpu_test.sdk/mb_design_wrapper.hdf.
+17:38:07 INFO  : Copied contents of C:/Users/Lukasz/workspace/mpu/vivado/mpu_test.sdk/mb_design_wrapper.hdf into \mb_design_wrapper_hw_platform_0\system.hdf.
+17:38:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:38:17 INFO  : 
+17:38:18 INFO  : Updating hardware inferred compiler options for mpu_test.
+17:38:18 INFO  : Clearing existing target manager status.
+17:38:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:38:19 WARN  : Linker script will not be updated automatically. Users need to update it manually.

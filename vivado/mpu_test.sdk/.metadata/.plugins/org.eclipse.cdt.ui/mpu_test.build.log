@@ -1,0 +1,21 @@
+17:38:24 **** Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1912	    268	   3108	   5288	   14a8	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+
+17:38:26 Build Finished (took 1s.396ms)
+

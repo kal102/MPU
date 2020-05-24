@@ -38,6 +38,12 @@ package mpu_macros_pkg;
   parameter [2:0] FRAME_ERR_CMD = 3'b010;
   parameter [2:0] FRAME_ERR_FRAME = 3'b110;
   
+  /* Stream types */
+  parameter [1:0] STREAM_NONE = 2'b00;
+  parameter [1:0] STREAM_DATA = 2'b01;
+  parameter [1:0] STREAM_ERR_DIM = 2'b11;
+  parameter [1:0] STREAM_ERR_CMD = 2'b10;
+  
 endpackage : mpu_macros_pkg
 
 `endif //MPU_MACROS_SVH_

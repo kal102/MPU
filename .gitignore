@@ -4,9 +4,11 @@
 /quartus/db/
 /quartus/incremental_db/
 /quartus/timing/
-/quartus_debug/db/
-/quartus_debug/incremental_db/
-/quartus_debug/timing/
+/vivado/mpu_test.cache/
+/vivado/mpu_test.tmp/
+/vivado/mpu_test.runs/
+/vivado/*.jou
+/vivado/*.log
 /scripts/__pycache__/
 /.project
 /dvt_build.log

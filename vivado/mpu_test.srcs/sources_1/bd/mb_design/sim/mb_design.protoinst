@@ -1,0 +1,51 @@
+{
+	"version": "1.0",
+	"modules": {
+		"mb_design": {
+			"proto_instances": {
+				"/microblaze_0/M0_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "Clk"},
+						"ARESET": { "actual": "Reset"},
+						"TDATA": { "actual": "M0_AXIS_TDATA"},
+						"TLAST": { "actual": "M0_AXIS_TLAST"},
+						"TREADY": { "actual": "M0_AXIS_TREADY"},
+						"TVALID": { "actual": "M0_AXIS_TVALID"}
+					}
+				},
+				"/microblaze_0/S0_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "Clk"},
+						"ARESET": { "actual": "Reset"},
+						"TDATA": { "actual": "S0_AXIS_TDATA"},
+						"TLAST": { "actual": "S0_AXIS_TLAST"},
+						"TREADY": { "actual": "S0_AXIS_TREADY"},
+						"TVALID": { "actual": "S0_AXIS_TVALID"}
+					}
+				},
+				"/mpu_0/axis_in": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "axis_in_tdata"},
+						"TLAST": { "actual": "axis_in_tlast"},
+						"TREADY": { "actual": "axis_in_tready"},
+						"TVALID": { "actual": "axis_in_tvalid"}
+					}
+				},
+				"/mpu_0/axis_out": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"TDATA": { "actual": "axis_out_tdata"},
+						"TLAST": { "actual": "axis_out_tlast"},
+						"TREADY": { "actual": "axis_out_tready"},
+						"TVALID": { "actual": "axis_out_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}
