@@ -9,6 +9,7 @@ Project components:
 /scripts - simulation scripts  
 /src - HDL models of MPU blocks and features  
 /tb - SystemVerilog testbenches and classes  
+/vivado - Vivado project with Microblaze
 
 Common file types:  
 *block_name*_beh.v - Behavioral model  
