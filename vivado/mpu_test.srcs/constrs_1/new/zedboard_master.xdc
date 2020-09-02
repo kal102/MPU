@@ -172,14 +172,14 @@ set_property PACKAGE_PIN Y9 [get_ports {clk_rtl}];  # "GCLK"
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN T22 [get_ports {LD0}];  # "LD0"
-#set_property PACKAGE_PIN T21 [get_ports {LD1}];  # "LD1"
-#set_property PACKAGE_PIN U22 [get_ports {LD2}];  # "LD2"
-#set_property PACKAGE_PIN U21 [get_ports {LD3}];  # "LD3"
-#set_property PACKAGE_PIN V22 [get_ports {LD4}];  # "LD4"
-#set_property PACKAGE_PIN W22 [get_ports {LD5}];  # "LD5"
-#set_property PACKAGE_PIN U19 [get_ports {LD6}];  # "LD6"
-#set_property PACKAGE_PIN U14 [get_ports {LD7}];  # "LD7"
+set_property PACKAGE_PIN T22 [get_ports {leds_tri_i[0]}];  # "LD0"
+set_property PACKAGE_PIN T21 [get_ports {leds_tri_i[1]}];  # "LD1"
+set_property PACKAGE_PIN U22 [get_ports {leds_tri_i[2]}];  # "LD2"
+set_property PACKAGE_PIN U21 [get_ports {leds_tri_i[3]}];  # "LD3"
+set_property PACKAGE_PIN V22 [get_ports {leds_tri_i[4]}];  # "LD4"
+set_property PACKAGE_PIN W22 [get_ports {leds_tri_i[5]}];  # "LD5"
+set_property PACKAGE_PIN U19 [get_ports {leds_tri_i[6]}];  # "LD6"
+set_property PACKAGE_PIN U14 [get_ports {leds_tri_i[7]}];  # "LD7"
 
 # ----------------------------------------------------------------------------
 # VGA Output - Bank 33
@@ -202,7 +202,7 @@ set_property PACKAGE_PIN Y9 [get_ports {clk_rtl}];  # "GCLK"
 # ----------------------------------------------------------------------------
 # User Push Buttons - Bank 34
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN P16 [get_ports {reset_rtl}];  # "BTNC"
+set_property PACKAGE_PIN P16 [get_ports {reset}];  # "BTNC"
 #set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
 #set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
 #set_property PACKAGE_PIN R18 [get_ports {BTNR}];  # "BTNR"

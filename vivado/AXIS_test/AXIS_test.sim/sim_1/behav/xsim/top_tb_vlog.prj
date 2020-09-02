@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../AXIS_test.srcs/sources_1/bd/design_1/ipshared/c923" \
+"../../../../AXIS_test.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../../AXIS_test.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
+"../../../../AXIS_test.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" \
+"../../../../AXIS_test.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../AXIS_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../AXIS_test.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

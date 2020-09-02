@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;mpu_test/src/km_gpio.h&apos;" deleteContents="false" description="Delete resource &apos;mpu_test/src/km_gpio.h&apos;" element1="/mpu_test/src/km_gpio.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1598644173243"/>
+</session>

@@ -1,0 +1,41 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../mpu_test.srcs/sources_1/bd/mb_design/ipshared/c923" --include "../../../../mpu_test.srcs/sources_1/bd/mb_design/ipshared/8713/hdl" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ip/mb_design_lmb_bram_0/sim/mb_design_lmb_bram_0.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ip/mb_design_clk_wiz_1_0/mb_design_clk_wiz_1_0_clk_wiz.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ip/mb_design_clk_wiz_1_0/mb_design_clk_wiz_1_0.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/FIFO_v.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/activation_pipeline.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/axis_rx.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/axis_tx.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/axis_tx_scheduler.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/buffer_a.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/buffer_a_4x.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/buffer_b.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/buffer_b_4x.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/buffer_c.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/delay.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mac_cell.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mem_1to2.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mem_2to2.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mmu_controller.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mmu_setup.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mmu_str.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/mpu.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/out_controller.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/padding_pipeline.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/pooling_max.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/pooling_pipeline.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/single_port_ram.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ipshared/5f9b/top.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ip/mb_design_mpu_0_3/sim/mb_design_mpu_0_3.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ip/mb_design_util_vector_logic_0_0/sim/mb_design_util_vector_logic_0_0.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/ip/mb_design_axis_data_fifo_0_0/sim/mb_design_axis_data_fifo_0_0.v" \
+"../../../../mpu_test.ip_user_files/bd/mb_design/sim/mb_design.v" \
+"../../../../mpu_test.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.v" \
+"../../../../mpu_test.srcs/sim_1/new/mb_design_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

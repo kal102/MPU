@@ -1,0 +1,90 @@
+/*
+ * km_axis.c
+ *
+ *  Created on: 28.08.2020
+ *      Author: Kacper
+ */
+#include "km_axis.h"
+
+/*static void inline write_axis(volatile unsigned int *a)
+{
+    register int a0,  a1,  a2,  a3;
+    register int a4,  a5,  a6,  a7;
+    register int a8,  a9,  a10, a11;
+    register int a12, a13, a14, a15;
+
+    a3  = a[3];  a1  = a[1];  a2  = a[2];  a0  = a[0];
+    a7  = a[7];  a5  = a[5];  a6  = a[6];  a4  = a[4];
+    a11 = a[11]; a9  = a[9];  a10 = a[10]; a8  = a[8];
+    a15 = a[15]; a13 = a[13]; a14 = a[14]; a12 = a[12];
+
+    putfsl(a0,  0); putfsl(a1,  0); putfsl(a2,  0); putfsl(a3,  0);
+    putfsl(a4,  0); putfsl(a5,  0); putfsl(a6,  0); putfsl(a7,  0);
+    putfsl(a8,  0); putfsl(a9,  0); putfsl(a10, 0); putfsl(a11, 0);
+    putfsl(a12, 0); putfsl(a13, 0); putfsl(a14, 0); putfsl(a15, 0);
+}*/
+
+/*
+ * Read 16 32-bit words as efficiently as possible.
+ */
+void read_axis(volatile unsigned int *a)
+{
+    register int a0,  a1,  a2,  a3;
+    register int a4,  a5,  a6,  a7;
+    register int a8,  a9,  a10, a11;
+    register int a12, a13, a14, a15;
+
+    getfsl(a0,  0); getfsl(a1,  0); getfsl(a2,  0); getfsl(a3,  0);
+    getfsl(a4,  0); getfsl(a5,  0); getfsl(a6,  0); getfsl(a7,  0);
+    getfsl(a8,  0); getfsl(a9,  0); getfsl(a10, 0); getfsl(a11, 0);
+    getfsl(a12, 0); getfsl(a13, 0); getfsl(a14, 0); getfsl(a15, 0);
+
+    a[3]  = a3;  a[1]  = a1;  a[2]  = a2;  a[0]  = a0;
+    a[7]  = a7;  a[5]  = a5;  a[6]  = a6;  a[4]  = a4;
+    a[11] = a11; a[9]  = a9;  a[10] = a10; a[8]  = a8;
+    a[15] = a15; a[13] = a13; a[14] = a14; a[12] = a12;
+}
+
+void Load(void){
+	// Command
+	putfsl(CMD_LOAD, 0);
+	// Buffer A/B
+	putfsl(0, 0);
+	// Buffer A index
+	putfsl(0, 0);
+	// Buffer B index
+	putfsl(2, 0);
+	// Bias
+	putfsl(255, 0);
+	putfsl(255, 0);
+	putfsl(255, 0);
+	putfsl(252, 0);
+	// Activation
+	putfsl(ACTIVATION_NONE, 0);
+	// Pooling
+	putfsl(POOLING_NONE, 0);
+	// Data
+	putfsl(POOLING_NONE, 0);
+	cputfsl(POOLING_NONE, 0);
+}
+
+void Multiply(void){
+	// Command
+	putfsl(CMD_MULTIPLY, 0);
+	// Buffer A/B
+	putfsl(0, 0);
+	// Buffer A index
+	putfsl(0, 0);
+	// Buffer B index
+	putfsl(2, 0);
+	// Bias
+	putfsl(255, 0);
+	putfsl(255, 0);
+	putfsl(255, 0);
+	putfsl(252, 0);
+	// Activation
+	putfsl(ACTIVATION_NONE, 0);
+	// Pooling
+	cputfsl(POOLING_NONE, 0);
+}
+

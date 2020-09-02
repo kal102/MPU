@@ -2,8 +2,9 @@
 
 module mb_design_tb;
 
-  reg clk_n, clk_p;
+  reg clk;
   reg reset;
+  wire [7:0] leds_tri_o;
 
   // Reset stimulus
   initial begin
@@ -14,20 +15,17 @@ module mb_design_tb;
   
   // Clocks stimulus
   initial begin
-    clk_n = 1'b0; //set clk to 0
-    clk_p = 1'b1;
+    clk = 1'b0; //set clk to 0
   end
   
   always begin
-    #5
-    clk_n = ~clk_n; //toggle clk every 5 time units
-    clk_p = ~clk_p; //toggle clk every 5 time units
+    #5 clk = ~clk; //toggle clk every 5 time units
   end
 
   mb_design_wrapper mb_design_inst (
-    .diff_clock_rtl_clk_n(clk_n),
-    .diff_clock_rtl_clk_p(clk_p),
-    .reset_rtl(reset)
+    .clk_rtl(clk),
+    .leds_tri_o(leds_tri_o),
+    .reset(reset)
   );
 
 endmodule

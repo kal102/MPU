@@ -56,7 +56,7 @@ module buffer_b_10x #(parameter VAR_SIZE = 8, parameter MMU_SIZE = 10)
   always @* begin
     case (state)
       STATE_IDLE: begin
-        state_nxt = cmd;
+        state_nxt = stop ? state : cmd;
         if (cmd == CMD_NONE)
           buffer_pointer_nxt = buffer_pointer;
         else

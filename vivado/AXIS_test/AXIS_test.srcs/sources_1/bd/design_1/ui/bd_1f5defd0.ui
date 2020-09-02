@@ -1,0 +1,45 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clock -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port S0_AXIS_TLAST_0 -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port S0_AXIS_TREADY_0 -pg 1 -lvl 5 -x 1520 -y 320 -defaultsOSRD
+preplace port S0_AXIS_TVALID_0 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port M0_AXIS_TLAST_0 -pg 1 -lvl 5 -x 1520 -y 40 -defaultsOSRD
+preplace port M0_AXIS_TREADY_0 -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port M0_AXIS_TVALID_0 -pg 1 -lvl 5 -x 1520 -y 240 -defaultsOSRD
+preplace portBus S0_AXIS_TDATA_0 -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus M0_AXIS_TDATA_0 -pg 1 -lvl 5 -x 1520 -y 20 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 3 -x 960 -y 170 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 4 -x 1400 -y 130 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 2 -x 430 -y 220 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 130 -y 500 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 430 -y 440 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 1 3 240 120 620 20 1280J
+preplace netloc clk_wiz_1_locked 1 1 1 260 480n
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 1 640 250n
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 2 630J 30 1270
+preplace netloc mdm_1_debug_sys_rst 1 0 3 20 430 250 540 610
+preplace netloc reset_rtl_1 1 0 2 NJ 420 NJ
+preplace netloc S0_AXIS_TLAST_0_1 1 0 3 NJ 130 NJ 130 610J
+preplace netloc microblaze_0_S0_AXIS_TREADY 1 2 3 650 320 NJ 320 NJ
+preplace netloc S0_AXIS_TVALID_0_1 1 0 3 NJ 150 NJ 150 600J
+preplace netloc S0_AXIS_TDATA_0_1 1 0 3 NJ 110 NJ 110 650J
+preplace netloc microblaze_0_M0_AXIS_TDATA 1 3 2 1290J 20 NJ
+preplace netloc microblaze_0_M0_AXIS_TLAST 1 3 2 1300J 40 NJ
+preplace netloc M0_AXIS_TREADY_0_1 1 0 4 NJ 330 NJ 330 NJ 330 1290
+preplace netloc microblaze_0_M0_AXIS_TVALID 1 3 2 NJ 240 NJ
+preplace netloc microblaze_0_dlmb_1 1 3 1 N 100
+preplace netloc microblaze_0_ilmb_1 1 3 1 N 120
+preplace netloc microblaze_0_debug 1 2 1 N 210
+preplace netloc diff_clock_rtl_1 1 0 1 NJ 490
+levelinfo -pg 1 0 130 430 960 1400 1520
+pagesize -pg 1 -db -bbox -sgen -220 0 1740 570
+"
+}
+{
+   "da_board_cnt":"2",
+   "da_mb_cnt":"1"
+}

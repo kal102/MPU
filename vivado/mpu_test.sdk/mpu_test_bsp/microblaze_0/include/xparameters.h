@@ -2,13 +2,14 @@
 #define XPARAMETERS_H   /* by using protection macros */
 
 /* Definitions for bus frequencies */
+#define XPAR_CPU_M_AXI_DP_FREQ_HZ 50000000
 /******************************************************************/
 
 /* Canonical definitions for bus frequencies */
 /******************************************************************/
 
-#define XPAR_CPU_CORE_CLOCK_FREQ_HZ 100000000
-#define XPAR_MICROBLAZE_CORE_CLOCK_FREQ_HZ 100000000
+#define XPAR_CPU_CORE_CLOCK_FREQ_HZ 50000000
+#define XPAR_MICROBLAZE_CORE_CLOCK_FREQ_HZ 50000000
 
 /******************************************************************/
 
@@ -50,7 +51,7 @@
 #define XPAR_MICROBLAZE_0_DIV_ZERO_EXCEPTION 0
 #define XPAR_MICROBLAZE_0_DP_AXI_MON 0
 #define XPAR_MICROBLAZE_0_DYNAMIC_BUS_SIZING 0
-#define XPAR_MICROBLAZE_0_D_AXI 0
+#define XPAR_MICROBLAZE_0_D_AXI 1
 #define XPAR_MICROBLAZE_0_D_LMB 1
 #define XPAR_MICROBLAZE_0_D_LMB_MON 0
 #define XPAR_MICROBLAZE_0_ECC_USE_CE_EXCEPTION 0
@@ -59,7 +60,7 @@
 #define XPAR_MICROBLAZE_0_ENDIANNESS 1
 #define XPAR_MICROBLAZE_0_FAULT_TOLERANT 0
 #define XPAR_MICROBLAZE_0_FPU_EXCEPTION 0
-#define XPAR_MICROBLAZE_0_FREQ 100000000
+#define XPAR_MICROBLAZE_0_FREQ 50000000
 #define XPAR_MICROBLAZE_0_FSL_EXCEPTION 0
 #define XPAR_MICROBLAZE_0_FSL_LINKS 1
 #define XPAR_MICROBLAZE_0_IADDR_SIZE 32
@@ -274,7 +275,7 @@
 #define XPAR_MICROBLAZE_DIV_ZERO_EXCEPTION 0
 #define XPAR_MICROBLAZE_DP_AXI_MON 0
 #define XPAR_MICROBLAZE_DYNAMIC_BUS_SIZING 0
-#define XPAR_MICROBLAZE_D_AXI 0
+#define XPAR_MICROBLAZE_D_AXI 1
 #define XPAR_MICROBLAZE_D_LMB 1
 #define XPAR_MICROBLAZE_D_LMB_MON 0
 #define XPAR_MICROBLAZE_ECC_USE_CE_EXCEPTION 0
@@ -283,7 +284,7 @@
 #define XPAR_MICROBLAZE_ENDIANNESS 1
 #define XPAR_MICROBLAZE_FAULT_TOLERANT 0
 #define XPAR_MICROBLAZE_FPU_EXCEPTION 0
-#define XPAR_MICROBLAZE_FREQ 100000000
+#define XPAR_MICROBLAZE_FREQ 50000000
 #define XPAR_MICROBLAZE_FSL_EXCEPTION 0
 #define XPAR_MICROBLAZE_FSL_LINKS 1
 #define XPAR_MICROBLAZE_IADDR_SIZE 32
@@ -551,6 +552,29 @@
 
 
 /* Definitions for peripheral MPU_0 */
+
+
+/******************************************************************/
+
+/* Definitions for driver GPIO */
+#define XPAR_XGPIO_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_GPIO_0 */
+#define XPAR_AXI_GPIO_0_BASEADDR 0x40000000
+#define XPAR_AXI_GPIO_0_HIGHADDR 0x4000FFFF
+#define XPAR_AXI_GPIO_0_DEVICE_ID 0
+#define XPAR_AXI_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_AXI_GPIO_0_IS_DUAL 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_GPIO_0 */
+#define XPAR_GPIO_0_BASEADDR 0x40000000
+#define XPAR_GPIO_0_HIGHADDR 0x4000FFFF
+#define XPAR_GPIO_0_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define XPAR_GPIO_0_INTERRUPT_PRESENT 0
+#define XPAR_GPIO_0_IS_DUAL 0
 
 
 /******************************************************************/

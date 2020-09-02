@@ -1,0 +1,69 @@
+/*
+ * main.c
+ *
+ *  Created on: 28.08.2020
+ *      Author: Kacper
+ */
+
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "math.h"
+#include "km_gpio.h"
+#include "km_axis.h"
+
+/***************************** Main function *********************************/
+
+int main()
+{
+	XGpio ledGpio;
+
+    volatile unsigned int outbuffer[BUFFER_SIZE];
+    volatile unsigned int inbuffer[BUFFER_SIZE];
+    int count = 0;
+
+	/* Init GPIO leds */
+	if(init(&ledGpio)) {
+		goto FAILURE;
+	}
+
+    /* Send matrix A over AXI stream */
+	setLed(&ledGpio, 0x001);
+	outbuffer[0] = 36;
+	outbuffer[1] = 129;
+	outbuffer[2] = 9;
+	Load(BUFFER_A, 1, 3, outbuffer);
+
+	/* Send matrix B over AXI stream */
+	setLed(&ledGpio, 0x003);
+	outbuffer[0] = 99;
+	outbuffer[1] = 101;
+	outbuffer[2] = 13;
+	outbuffer[3] = 13;
+	outbuffer[4] = 18;
+	outbuffer[5] = 118;
+	outbuffer[6] = 141;
+	outbuffer[7] = 1;
+	outbuffer[8] = 61;
+	Load(BUFFER_B, 3, 3, outbuffer);
+
+	/* Send multiply command through AXI stream */
+	setLed(&ledGpio, 0x007);
+	Multiply();
+
+	/* Load result matrix from AXI stream */
+	setLed(&ledGpio, 0x00f);
+	outbuffer[0] = 4294958146;
+	outbuffer[1] = 4294966536;
+	outbuffer[2] = 4294963574;
+	if(CompareResults(1, 3, outbuffer)){
+		setLed(&ledGpio, 0x01f);
+	}
+	else{
+		setLed(&ledGpio, 0x080);
+	}
+
+	/* Failure or end trap */
+	FAILURE:
+	while(1);
+}

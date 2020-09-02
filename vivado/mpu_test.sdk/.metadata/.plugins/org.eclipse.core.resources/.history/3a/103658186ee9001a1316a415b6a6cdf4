@@ -1,0 +1,66 @@
+/*
+ * main.c
+ *
+ *  Created on: 28.08.2020
+ *      Author: Kacper
+ */
+
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "math.h"
+#include "km_gpio.h"
+#include "km_axis.h"
+
+/***************************** Main function *********************************/
+
+int main()
+{
+	XGpio ledGpio;
+
+    volatile unsigned int outbuffer[BUFFER_SIZE] = {
+       0x36, 0x129, 0x9, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0
+    };
+    volatile unsigned int inbuffer[BUFFER_SIZE];
+    int count = 0;
+
+	/* Init GPIO */
+	if (init(&ledGpio)) {
+		goto FAILURE;
+	}
+
+    /* Perform transfers */
+	setLed(&ledGpio, 0x001);
+	Load(buffer=BUFFER_A, rows=1, columns=3, *outbuffer);
+
+	setLed(&ledGpio, 0x003);
+	Load(buffer=BUFFER_B, rows=3, columns=3, *outbuffer);
+    putfsl(1,  0);
+    putfsl(1,  0);
+    putfsl(0,  0);
+    putfsl(2,  0);
+    putfsl(3,  0);
+    putfsl(3,  0);
+    putfsl(0,  0);
+    putfsl(99,  0);
+    putfsl(101,  0);
+    putfsl(13,  0);
+    putfsl(13,  0);
+    putfsl(18,  0);
+    putfsl(118,  0);
+    putfsl(141,  0);
+    putfsl(1,  0);
+    cputfsl(61,  0);
+
+	setLed(&ledGpio, 0x007);
+	Multiply();
+
+	setLed(&ledGpio, 0x00f);
+    while (count++ < MAX_COUNT) {
+        //write_axis(outbuffer);
+        read_axis(inbuffer);
+    }
+	/* Failure or end trap */
+	FAILURE:
+	while(1);
+}

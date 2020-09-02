@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="mb_design_wrapper_hw_platform_0-device"/>
+	<item value="false" key="mb_design_wrapper_hw_platform_0-partial_bit"/>
+	<item value="F:\vivado_projects\mpu\vivado\mpu_test.sdk\mpu_test\Debug\mpu_test.elf" key="mb_design_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="mb_design_wrapper.mmi" key="mb_design_wrapper_hw_platform_0-bmmFile"/>
+	<item value="mb_design_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="mb_design_wrapper_hw_platform_0-target"/>
+	<item value="mb_design_wrapper.bit" key="mb_design_wrapper_hw_platform_0-bitFile"/>
+</section>

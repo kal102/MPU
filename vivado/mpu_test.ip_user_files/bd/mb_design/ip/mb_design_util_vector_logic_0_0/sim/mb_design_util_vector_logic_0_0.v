@@ -58,15 +58,15 @@ module mb_design_util_vector_logic_0_0 (
   Res
 );
 
-input wire [7 : 0] Op1;
-output wire [7 : 0] Res;
+input wire [0 : 0] Op1;
+output wire [0 : 0] Res;
 
   util_vector_logic_v2_0_1_util_vector_logic #(
     .C_OPERATION("not"),
-    .C_SIZE(8)
+    .C_SIZE(1)
   ) inst (
     .Op1(Op1),
-    .Op2(8'B0),
+    .Op2(1'B0),
     .Res(Res)
   );
 endmodule

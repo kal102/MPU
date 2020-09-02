@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Tue May 12 18:15:20 2020
-// Host        : LEN running 64-bit Service Pack 1  (build 7601)
+// Date        : Thu Aug 27 21:45:54 2020
+// Host        : DESKTOP-A70U0DK running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/Lukasz/workspace/mpu/vivado/mpu_test.srcs/sources_1/bd/mb_design/ip/mb_design_util_vector_logic_0_0/mb_design_util_vector_logic_0_0_sim_netlist.v
+//               F:/vivado_projects/mpu/vivado/mpu_test.srcs/sources_1/bd/mb_design/ip/mb_design_util_vector_logic_0_0/mb_design_util_vector_logic_0_0_sim_netlist.v
 // Design      : mb_design_util_vector_logic_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,67 +17,17 @@
 module mb_design_util_vector_logic_0_0
    (Op1,
     Res);
-  input [7:0]Op1;
-  output [7:0]Res;
+  input [0:0]Op1;
+  output [0:0]Res;
 
-  wire [7:0]Op1;
-  wire [7:0]Res;
-
-  mb_design_util_vector_logic_0_0_util_vector_logic_v2_0_1_util_vector_logic inst
-       (.Op1(Op1),
-        .Res(Res));
-endmodule
-
-(* ORIG_REF_NAME = "util_vector_logic_v2_0_1_util_vector_logic" *) 
-module mb_design_util_vector_logic_0_0_util_vector_logic_v2_0_1_util_vector_logic
-   (Res,
-    Op1);
-  output [7:0]Res;
-  input [7:0]Op1;
-
-  wire [7:0]Op1;
-  wire [7:0]Res;
+  wire [0:0]Op1;
+  wire [0:0]Res;
 
   LUT1 #(
     .INIT(2'h1)) 
     \Res[0]_INST_0 
-       (.I0(Op1[0]),
-        .O(Res[0]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[1]_INST_0 
-       (.I0(Op1[1]),
-        .O(Res[1]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[2]_INST_0 
-       (.I0(Op1[2]),
-        .O(Res[2]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[3]_INST_0 
-       (.I0(Op1[3]),
-        .O(Res[3]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[4]_INST_0 
-       (.I0(Op1[4]),
-        .O(Res[4]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[5]_INST_0 
-       (.I0(Op1[5]),
-        .O(Res[5]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[6]_INST_0 
-       (.I0(Op1[6]),
-        .O(Res[6]));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \Res[7]_INST_0 
-       (.I0(Op1[7]),
-        .O(Res[7]));
+       (.I0(Op1),
+        .O(Res));
 endmodule
 `ifndef GLBL
 `define GLBL

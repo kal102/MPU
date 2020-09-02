@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Sun May 24 17:24:56 2020
-// Host        : LEN running 64-bit Service Pack 1  (build 7601)
+// Date        : Fri Aug 28 20:15:17 2020
+// Host        : DESKTOP-A70U0DK running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Lukasz/workspace/mpu/vivado/mpu_test.srcs/sources_1/bd/mb_design/ip/mb_design_microblaze_0_0/mb_design_microblaze_0_0_stub.v
+//               F:/vivado_projects/mpu/vivado/mpu_test.srcs/sources_1/bd/mb_design/ip/mb_design_microblaze_0_0/mb_design_microblaze_0_0_stub.v
 // Design      : mb_design_microblaze_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1
@@ -16,11 +16,15 @@
 (* x_core_info = "MicroBlaze,Vivado 2019.1" *)
 module mb_design_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Address, 
   Interrupt_Ack, Instr_Addr, Instr, IFetch, I_AS, IReady, IWAIT, ICE, IUE, Data_Addr, Data_Read, 
-  Data_Write, D_AS, Read_Strobe, Write_Strobe, DReady, DWait, DCE, DUE, Byte_Enable, Dbg_Clk, Dbg_TDI, 
-  Dbg_TDO, Dbg_Reg_En, Dbg_Shift, Dbg_Capture, Dbg_Update, Debug_Rst, Dbg_Disable, M0_AXIS_TLAST, 
-  M0_AXIS_TDATA, M0_AXIS_TVALID, M0_AXIS_TREADY, S0_AXIS_TLAST, S0_AXIS_TDATA, 
-  S0_AXIS_TVALID, S0_AXIS_TREADY)
-/* synthesis syn_black_box black_box_pad_pin="Clk,Reset,Interrupt,Interrupt_Address[0:31],Interrupt_Ack[0:1],Instr_Addr[0:31],Instr[0:31],IFetch,I_AS,IReady,IWAIT,ICE,IUE,Data_Addr[0:31],Data_Read[0:31],Data_Write[0:31],D_AS,Read_Strobe,Write_Strobe,DReady,DWait,DCE,DUE,Byte_Enable[0:3],Dbg_Clk,Dbg_TDI,Dbg_TDO,Dbg_Reg_En[0:7],Dbg_Shift,Dbg_Capture,Dbg_Update,Debug_Rst,Dbg_Disable,M0_AXIS_TLAST,M0_AXIS_TDATA[31:0],M0_AXIS_TVALID,M0_AXIS_TREADY,S0_AXIS_TLAST,S0_AXIS_TDATA[31:0],S0_AXIS_TVALID,S0_AXIS_TREADY" */;
+  Data_Write, D_AS, Read_Strobe, Write_Strobe, DReady, DWait, DCE, DUE, Byte_Enable, M_AXI_DP_AWADDR, 
+  M_AXI_DP_AWPROT, M_AXI_DP_AWVALID, M_AXI_DP_AWREADY, M_AXI_DP_WDATA, M_AXI_DP_WSTRB, 
+  M_AXI_DP_WVALID, M_AXI_DP_WREADY, M_AXI_DP_BRESP, M_AXI_DP_BVALID, M_AXI_DP_BREADY, 
+  M_AXI_DP_ARADDR, M_AXI_DP_ARPROT, M_AXI_DP_ARVALID, M_AXI_DP_ARREADY, M_AXI_DP_RDATA, 
+  M_AXI_DP_RRESP, M_AXI_DP_RVALID, M_AXI_DP_RREADY, Dbg_Clk, Dbg_TDI, Dbg_TDO, Dbg_Reg_En, 
+  Dbg_Shift, Dbg_Capture, Dbg_Update, Debug_Rst, Dbg_Disable, M0_AXIS_TLAST, M0_AXIS_TDATA, 
+  M0_AXIS_TVALID, M0_AXIS_TREADY, S0_AXIS_TLAST, S0_AXIS_TDATA, S0_AXIS_TVALID, 
+  S0_AXIS_TREADY)
+/* synthesis syn_black_box black_box_pad_pin="Clk,Reset,Interrupt,Interrupt_Address[0:31],Interrupt_Ack[0:1],Instr_Addr[0:31],Instr[0:31],IFetch,I_AS,IReady,IWAIT,ICE,IUE,Data_Addr[0:31],Data_Read[0:31],Data_Write[0:31],D_AS,Read_Strobe,Write_Strobe,DReady,DWait,DCE,DUE,Byte_Enable[0:3],M_AXI_DP_AWADDR[31:0],M_AXI_DP_AWPROT[2:0],M_AXI_DP_AWVALID,M_AXI_DP_AWREADY,M_AXI_DP_WDATA[31:0],M_AXI_DP_WSTRB[3:0],M_AXI_DP_WVALID,M_AXI_DP_WREADY,M_AXI_DP_BRESP[1:0],M_AXI_DP_BVALID,M_AXI_DP_BREADY,M_AXI_DP_ARADDR[31:0],M_AXI_DP_ARPROT[2:0],M_AXI_DP_ARVALID,M_AXI_DP_ARREADY,M_AXI_DP_RDATA[31:0],M_AXI_DP_RRESP[1:0],M_AXI_DP_RVALID,M_AXI_DP_RREADY,Dbg_Clk,Dbg_TDI,Dbg_TDO,Dbg_Reg_En[0:7],Dbg_Shift,Dbg_Capture,Dbg_Update,Debug_Rst,Dbg_Disable,M0_AXIS_TLAST,M0_AXIS_TDATA[31:0],M0_AXIS_TVALID,M0_AXIS_TREADY,S0_AXIS_TLAST,S0_AXIS_TDATA[31:0],S0_AXIS_TVALID,S0_AXIS_TREADY" */;
   input Clk;
   input Reset;
   input Interrupt;
@@ -45,6 +49,25 @@ module mb_design_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Address,
   input DCE;
   input DUE;
   output [0:3]Byte_Enable;
+  output [31:0]M_AXI_DP_AWADDR;
+  output [2:0]M_AXI_DP_AWPROT;
+  output M_AXI_DP_AWVALID;
+  input M_AXI_DP_AWREADY;
+  output [31:0]M_AXI_DP_WDATA;
+  output [3:0]M_AXI_DP_WSTRB;
+  output M_AXI_DP_WVALID;
+  input M_AXI_DP_WREADY;
+  input [1:0]M_AXI_DP_BRESP;
+  input M_AXI_DP_BVALID;
+  output M_AXI_DP_BREADY;
+  output [31:0]M_AXI_DP_ARADDR;
+  output [2:0]M_AXI_DP_ARPROT;
+  output M_AXI_DP_ARVALID;
+  input M_AXI_DP_ARREADY;
+  input [31:0]M_AXI_DP_RDATA;
+  input [1:0]M_AXI_DP_RRESP;
+  input M_AXI_DP_RVALID;
+  output M_AXI_DP_RREADY;
   input Dbg_Clk;
   input Dbg_TDI;
   output Dbg_TDO;

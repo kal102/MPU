@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:mpu:1.0
-// IP Revision: 9
+// IP Revision: 10
 
 (* X_CORE_INFO = "top,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "mb_design_mpu_0_3,top,{}" *)
-(* CORE_GENERATION_INFO = "mb_design_mpu_0_3,top,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=mpu,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,VAR_SIZE=8,ACC_SIZE=24,MMU_SIZE=10,FIFO_SIZE=4}" *)
+(* CORE_GENERATION_INFO = "mb_design_mpu_0_3,top,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=mpu,x_ipVersion=1.0,x_ipCoreRevision=10,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,VAR_SIZE=8,ACC_SIZE=24,MMU_SIZE=10,FIFO_SIZE=4}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module mb_design_mpu_0_3 (

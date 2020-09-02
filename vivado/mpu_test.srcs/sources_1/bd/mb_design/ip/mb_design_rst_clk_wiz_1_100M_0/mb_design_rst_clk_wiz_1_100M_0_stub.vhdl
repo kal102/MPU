@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun May 24 17:23:54 2020
--- Host        : LEN running 64-bit Service Pack 1  (build 7601)
+-- Date        : Fri Aug 28 19:37:12 2020
+-- Host        : DESKTOP-A70U0DK running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/Lukasz/workspace/mpu/vivado/mpu_test.srcs/sources_1/bd/mb_design/ip/mb_design_rst_clk_wiz_1_100M_0/mb_design_rst_clk_wiz_1_100M_0_stub.vhdl
+--               F:/vivado_projects/mpu/vivado/mpu_test.srcs/sources_1/bd/mb_design/ip/mb_design_rst_clk_wiz_1_100M_0/mb_design_rst_clk_wiz_1_100M_0_stub.vhdl
 -- Design      : mb_design_rst_clk_wiz_1_100M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

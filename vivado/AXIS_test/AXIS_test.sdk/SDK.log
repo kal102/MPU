@@ -1,0 +1,6 @@
+15:06:20 INFO  : Registering command handlers for SDK TCF services
+15:06:21 INFO  : Launching XSCT server: xsct.bat -interactive F:\Dokumenty\mpu\vivado\AXIS_test\AXIS_test.sdk\temp_xsdb_launch_script.tcl
+15:06:31 INFO  : XSCT server has started successfully.
+15:06:32 INFO  : Successfully done setting XSCT server connection channel  
+15:06:32 INFO  : Successfully done setting SDK workspace  
+15:06:32 INFO  : Processing command line option -hwspec F:/Dokumenty/mpu/vivado/AXIS_test/AXIS_test.sdk/design_1_wrapper.hdf.

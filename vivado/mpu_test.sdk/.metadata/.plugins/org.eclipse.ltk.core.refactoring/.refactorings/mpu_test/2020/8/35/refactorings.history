@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mpu_test/src/km_gpio&apos; to &apos;km_gpio.h&apos;" description="Rename resource &apos;km_gpio&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/km_gpio" name="km_gpio.h" stamp="1598644146548" updateReferences="true"/>
+</session>

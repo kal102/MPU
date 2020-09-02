@@ -1,52 +1,22 @@
-18:21:10 **** Build of project mpu_test_bsp ****
-make -k all 
-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling bram"
-mb-ar: creating ../../../lib/libxil.a
-"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling cpu"
-"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling standalone";
-inbyte.c: In function 'inbyte':
-inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-outbyte.c: In function 'outbyte':
-outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
- void outbyte(char c) {
-              ~~~~~^
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-'Finished building libraries'
-
-**** Build of configuration Debug for project mpu_test ****
-
-Nothing to build for project mpu_test
-18:21:35 **** Auto Build of configuration Debug for project mpu_test ****
+12:24:00 **** Incremental Build of configuration Debug for project mpu_test ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
 'Building target: mpu_test.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: c:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: in function `_crtinit':
-(.text+0x78): undefined reference to `main'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+e:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: mpu_test.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+e:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 56 bytes
 collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:38: mpu_test.elf] Error 1
-18:22:31 **** Auto Build of configuration Debug for project mpu_test ****
+12:24:30 **** Incremental Build of configuration Debug for project mpu_test ****
+make all 
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+e:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: mpu_test.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+e:/xilinx/sdk/2019.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 56 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: mpu_test.elf] Error 1
+12:26:50 **** Auto Build of configuration Debug for project mpu_test ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -55,376 +25,19 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/
 ' '
 'Building target: mpu_test.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: mpu_test.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size mpu_test.elf  |tee "mpu_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   1932	    268	   3112	   5312	   14c0	mpu_test.elf
+   4292	    288	   3116	   7696	   1e10	mpu_test.elf
 'Finished building: mpu_test.elf.size'
 ' '
-18:22:40 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:22:42 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:22:45 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:22:51 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:23:04 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:25:02 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:26:31 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:26:37 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:29:08 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:9:10: fatal error: xtmrctr.h: No such file or directory
- #include <xtmrctr.h>
-          ^~~~~~~~~~~
-compilation terminated.
-make: *** [src/subdir.mk:23: src/main.o] Error 1
-18:29:26 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:9:10: fatal error: xtmrctr.h: No such file or directory
- #include <xtmrctr.h>
-          ^~~~~~~~~~~
-compilation terminated.
-make: *** [src/subdir.mk:23: src/main.o] Error 1
-18:29:29 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:29:32 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:29:39 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:13:2: error: 'put' undeclared (first use in this function)
-  put
-  ^~~
-../src/main.c:13:2: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:13:5: error: expected ';' before 'while'
-  put
-     ^
-     ;
-  while(1);
-  ~~~~~
-make: *** [src/subdir.mk:23: src/main.o] Error 1
-18:29:46 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:13:9: error: macro "putfsl" requires 2 arguments, but only 1 given
-  putfsl()
-         ^
-../src/main.c:13:2: error: 'putfsl' undeclared (first use in this function)
-  putfsl()
-  ^~~~~~
-../src/main.c:13:2: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:13:8: error: expected ';' before 'while'
-  putfsl()
-        ^
-        ;
-  while(1);
-  ~~~~~  
-make: *** [src/subdir.mk:23: src/main.o] Error 1
-18:29:49 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:12:9: error: macro "putfsl" requires 2 arguments, but only 1 given
-  putfsl()
-         ^
-../src/main.c:12:2: error: 'putfsl' undeclared (first use in this function)
-  putfsl()
-  ^~~~~~
-../src/main.c:12:2: note: each undeclared identifier is reported only once for each function it appears in
-../src/main.c:12:8: error: expected ';' before 'while'
-  putfsl()
-        ^
-        ;
-  while(1);
-  ~~~~~  
-make: *** [src/subdir.mk:23: src/main.o] Error 1
-18:29:51 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu_test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu_test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu_test.elf  |tee "mpu_test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
-'Finished building: mpu_test.elf.size'
-' '
-18:30:17 **** Incremental Build of configuration Debug for project mpu_test ****
+12:26:55 **** Incremental Build of configuration Debug for project mpu_test ****
 make all 
 make: Nothing to be done for 'all'.
-18:31:39 **** Incremental Build of configuration Debug for project mpu_test ****
-make all 
-make: Nothing to be done for 'all'.
-17:38:08 **** Auto Build of project mpu_test_bsp ****
-make -k all 
-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling bram"
-"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling cpu"
-"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling standalone";
-inbyte.c: In function 'inbyte':
-inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-outbyte.c: In function 'outbyte':
-outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
- void outbyte(char c) {
-              ~~~~~^
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-'Finished building libraries'
-17:38:17 **** Auto Build of configuration Debug for project mpu_test ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c:8:10: fatal error: mb_interface.h: No such file or directory
- #include "mb_interface.h"
-          ^~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [src/subdir.mk:23: src/main.o] Error 1
-17:38:18 **** Clean-only build of project mpu_test_bsp ****
-make -k clean 
-make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
-make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
-make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
-rm -f microblaze_0/lib/libxil.a
-17:38:19 **** Clean-only build of configuration Debug for project mpu_test ****
-make clean 
-rm -rf  ./src/main.o  ./src/main.d  mpu_test.elf.size  mpu_test.elf
-' '
-17:38:19 **** Build of project mpu_test_bsp ****
-make -k all 
-"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
-make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling bram"
-mb-ar: creating ../../../lib/libxil.a
-"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
-make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling cpu"
-"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
-make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
-"Compiling standalone";
-inbyte.c: In function 'inbyte':
-inbyte.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-outbyte.c: In function 'outbyte':
-outbyte.c:11:19: warning: unused parameter 'c' [-Wunused-parameter]
- void outbyte(char c) {
-              ~~~~~^
-microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
- #pragma message ("For the sleep routines, assembly instructions are used")
-         ^~~~~~~
-'Finished building libraries'
-17:38:24 **** Build of configuration Debug for project mpu_test ****
+12:29:41 **** Auto Build of configuration Debug for project mpu_test ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -433,12 +46,362 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/
 ' '
 'Building target: mpu_test.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: mpu_test.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size mpu_test.elf  |tee "mpu_test.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   1912	    268	   3108	   5288	   14a8	mpu_test.elf
+   4252	    288	   3116	   7656	   1de8	mpu_test.elf
 'Finished building: mpu_test.elf.size'
 ' '
+12:31:45 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4344	    288	   3112	   7744	   1e40	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:35:43 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+../src/km_axis.c:33:6: error: conflicting types for 'Multiply'
+ void Multiply(unsigned int indexA, unsigned int indexB, unsigned int bias){
+      ^~~~~~~~
+In file included from ../src/km_axis.c:7:
+../src/km_axis.h:38:6: note: previous declaration of 'Multiply' was here
+ void Multiply(unsigned int indexA, unsigned int indexB);
+      ^~~~~~~~
+make: *** [src/subdir.mk:29: src/km_axis.o] Error 1
+12:36:17 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+../src/km_axis.c:33:6: error: conflicting types for 'Multiply'
+ void Multiply(unsigned int indexA, unsigned int indexB, unsigned int bias){
+      ^~~~~~~~
+In file included from ../src/km_axis.c:7:
+../src/km_axis.h:38:6: note: previous declaration of 'Multiply' was here
+ void Multiply(unsigned int indexA, unsigned int indexB);
+      ^~~~~~~~
+make: *** [src/subdir.mk:29: src/km_axis.o] Error 1
+12:36:29 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+'Finished building: ../src/km_axis.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:2: error: too few arguments to function 'Multiply'
+  Multiply(0, 2);
+  ^~~~~~~~
+In file included from ../src/main.c:13:
+../src/km_axis.h:38:6: note: declared here
+ void Multiply(unsigned int indexA, unsigned int indexB, unsigned int bias);
+      ^~~~~~~~
+make: *** [src/subdir.mk:29: src/main.o] Error 1
+12:36:41 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4360	    288	   3112	   7760	   1e50	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:36:51 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+../src/km_axis.c:33:6: error: conflicting types for 'Multiply'
+ void Multiply(unsigned int indexA, unsigned int indexB, unsigned int bias){
+      ^~~~~~~~
+In file included from ../src/km_axis.c:7:
+../src/km_axis.h:38:6: note: previous declaration of 'Multiply' was here
+ void Multiply(unsigned int indexA, unsigned int indexB, int bias);
+      ^~~~~~~~
+make: *** [src/subdir.mk:29: src/km_axis.o] Error 1
+12:36:56 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+'Finished building: ../src/km_axis.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4360	    288	   3112	   7760	   1e50	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:37:03 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+'Finished building: ../src/km_axis.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    288	   3116	   7760	   1e50	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:37:14 **** Incremental Build of configuration Debug for project mpu_test ****
+make all 
+make: Nothing to be done for 'all'.
+12:38:09 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+'Finished building: ../src/km_axis.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    288	   3116	   7760	   1e50	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:38:14 **** Incremental Build of configuration Debug for project mpu_test ****
+make all 
+make: Nothing to be done for 'all'.
+12:42:45 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:38: warning: passing argument 6 of 'Load' makes pointer from integer without a cast [-Wint-conversion]
+  Load(BUFFER_A, 0, 0, 1, 3, outbuffer[0]);
+                             ~~~~~~~~~^~~
+In file included from ../src/main.c:13:
+../src/km_axis.h:37:129: note: expected 'volatile int *' but argument is of type 'int'
+ void Load(unsigned int buffer, unsigned int indexA, unsigned int indexB, unsigned int rows, unsigned int columns, volatile int *data);
+                                                                                                                   ~~~~~~~~~~~~~~^~~~
+../src/main.c:55:38: warning: passing argument 6 of 'Load' makes pointer from integer without a cast [-Wint-conversion]
+  Load(BUFFER_B, 0, 2, 3, 3, outbuffer[3]);
+                             ~~~~~~~~~^~~
+In file included from ../src/main.c:13:
+../src/km_axis.h:37:129: note: expected 'volatile int *' but argument is of type 'int'
+ void Load(unsigned int buffer, unsigned int indexA, unsigned int indexB, unsigned int rows, unsigned int columns, volatile int *data);
+                                                                                                                   ~~~~~~~~~~~~~~^~~~
+../src/main.c:64:36: warning: passing argument 3 of 'CompareResults' makes pointer from integer without a cast [-Wint-conversion]
+  if(!CompareResults(1, 3, outbuffer[12])){
+                           ~~~~~~~~~^~~~
+In file included from ../src/main.c:13:
+../src/km_axis.h:39:74: note: expected 'volatile int *' but argument is of type 'int'
+ u8 CompareResults(unsigned int rows, unsigned int columns, volatile int *data);
+                                                            ~~~~~~~~~~~~~~^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4356	    288	   3116	   7760	   1e50	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:42:54 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:29: error: invalid type argument of unary '*' (have 'int')
+  Load(BUFFER_A, 0, 0, 1, 3, *outbuffer[0]);
+                             ^~~~~~~~~~~~~
+../src/main.c:55:29: error: invalid type argument of unary '*' (have 'int')
+  Load(BUFFER_B, 0, 2, 3, 3, *outbuffer[3]);
+                             ^~~~~~~~~~~~~
+../src/main.c:64:27: error: invalid type argument of unary '*' (have 'int')
+  if(!CompareResults(1, 3, *outbuffer[12])){
+                           ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/main.o] Error 1
+12:43:04 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4364	    288	   3116	   7768	   1e58	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:43:08 **** Incremental Build of configuration Debug for project mpu_test ****
+make all 
+make: Nothing to be done for 'all'.
+12:43:42 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4364	    288	   3116	   7768	   1e58	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:48:45 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4476	    288	   3116	   7880	   1ec8	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:49:00 **** Incremental Build of configuration Debug for project mpu_test ****
+make all 
+make: Nothing to be done for 'all'.
+12:49:34 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4476	    288	   3116	   7880	   1ec8	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:50:46 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+'Finished building: ../src/km_axis.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4476	    288	   3116	   7880	   1ec8	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:52:25 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/km_axis.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/km_axis.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/km_axis.d" -MT"src/km_axis.o" -o "src/km_axis.o" "../src/km_axis.c"
+'Finished building: ../src/km_axis.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4472	    288	   3112	   7872	   1ec0	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:52:29 **** Auto Build of configuration Debug for project mpu_test ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../mpu_test_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu_test.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu_test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu_test.elf"  ./src/km_axis.o ./src/km_gpio.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu_test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu_test.elf  |tee "mpu_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4472	    288	   3112	   7872	   1ec0	mpu_test.elf
+'Finished building: mpu_test.elf.size'
+' '
+12:52:39 **** Incremental Build of configuration Debug for project mpu_test ****
+make all 
+make: Nothing to be done for 'all'.

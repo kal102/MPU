@@ -1,8 +1,8 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sun May 24 17:23:53 2020
--- Host        : LEN running 64-bit Service Pack 1  (build 7601)
+-- Date        : Fri Aug 28 19:36:25 2020
+-- Host        : DESKTOP-A70U0DK running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top mb_design_ilmb_v10_0 -prefix
 --               mb_design_ilmb_v10_0_ mb_design_dlmb_v10_0_stub.vhdl
 -- Design      : mb_design_dlmb_v10_0
